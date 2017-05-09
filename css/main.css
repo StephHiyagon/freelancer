@@ -16,6 +16,7 @@ header{
   height: 100px;
   min-height: 70px;
   padding:25px 0;
+  z-index: 1;
 }
 
 
@@ -113,4 +114,33 @@ div.rect{
 
 .xsmall{
   font-size: 1.5em;
+}
+
+#portfolio{
+  display: block;
+  position: relative;
+  top: 14em;
+}
+
+div.title{
+  display:flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height:6.5em;
+}
+
+
+div.title>h1{
+  font-size: 3em;
+}
+
+.black{
+  background-color:#333333;
+  color:white;
+  height: 0.4em;
+  display:inline-flex;
+  margin:0.5em;
+  width:38%;
 }
