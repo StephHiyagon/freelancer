@@ -75,7 +75,7 @@ a:hover{
 section.start{
   position:relative;
   top:7rem;
-  height: 40.3em;
+  height: 46.3em;
   background-color:#18BC9C;
   width:100%;
   margin:0;
@@ -85,9 +85,9 @@ section.start{
   display:flex;
   flex-direction: column;
   justify-content:space-around;
-  height:40.3em;
+  height:50.3em;
   align-items: center;
-  padding-top:7.2em;
+  padding:7.2em 0;
   width:100%;
 }
 
@@ -96,7 +96,7 @@ section.start{
 }
 
 div.rect{
-  background-color: white;
+  background-color: #fff;
   height: 0.4em;
   display:inline-flex;
   margin:0.5em;
@@ -138,9 +138,23 @@ div.title>h1{
 
 .black{
   background-color:#333333;
-  color:white;
+  color:#fff;
   height: 0.4em;
   display:inline-flex;
   margin:0.5em;
   width:38%;
+}
+
+.fotos{
+  margin: 3em auto;
+  display:flex;
+  width:90%;
+  justify-content: center;
+  align-content:center;
+  flex-wrap: wrap;
+  /*height:650px;*/
+}
+
+.portfolio{
+  margin:2em;
 }
