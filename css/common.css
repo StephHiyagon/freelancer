@@ -1,3 +1,11 @@
-/*
- * Estilos reutilizables
- */
+.may{
+  text-transform: uppercase;
+}
+
+.white{
+  color:white;
+}
+
+.bold{
+  font-weight: 700;
+}
