@@ -12,7 +12,7 @@ function moveScroll(event){
     console.log(scroll);
   }
 
-  if(scroll>677){
+  if(scroll>767){
     enlace[0].classList.add("js-active");
   }else{
     enlace[0].classList.remove("js-active");
@@ -42,7 +42,7 @@ function moveScroll(event){
 window.addEventListener('scroll',moveScroll);
 
 enlace[0].addEventListener("click", function(){
-    window.scrollTo(0,678);
+    window.scrollTo(0,768);
     // enlace[0].classList.add("js-active");
 })
 
