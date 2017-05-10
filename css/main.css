@@ -236,6 +236,12 @@ div.portfoto:hover div.icono{
     cursor: pointer;
 }
 
+.cerrar{
+  cursor:pointer;
+  padding:10px;
+  border-radius: 14%;
+}
+
 .parrafomod{
   width:50%;
   margin:0 auto;
@@ -247,6 +253,15 @@ div.portfoto:hover div.icono{
   align-items: center;
 }
 
+.parrafomod>p{
+  font-size: 1.2em;
+  line-height: 22px;
+}
+
+
+.fa-times{
+  margin-right: 5px;
+}
 /* 100% imagen en la pantalla */
 @media only screen and (max-width: 700px){
     .modal-content {
@@ -404,15 +419,6 @@ footer{
   flex-wrap: nowrap;
 }
 
-.ico{
-  width: 2em;
-  height: 2em;
-  text-align: center;
-  border:1px solid #fff;
-  border-radius: 50%;
-  padding:10px;
-  margin:10px;
-}
 
 .ico:hover{
   color:#18BC9C;
@@ -443,5 +449,4 @@ div.copy{
   justify-content: center;
   align-items: center;
   height: 60px;
-  /*margin:20px auto;*/
 }
