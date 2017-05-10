@@ -43,7 +43,7 @@ Como se ve en el navegador:
 ![function numeros](assets/images/numeros.png)
 
 
-![function validar todo al click](assets/images/validatodo.png)
+![function validar todo al click](assets/images/validaTodo.png)
 
 
 
