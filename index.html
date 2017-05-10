@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="assets/fonts/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Freelancer</title>
@@ -14,9 +14,9 @@
 		<section>
 			<h1 class="may white bold">start bootstrap</h1>
 			<nav class="index">
-				<a href="#portfolio" class="may white bold">portfolio</a>
-				<a href="#about" class="may white bold">about</a>
-				<a href="#contact" class="may white bold">contact</a>
+				<a href="#portfolio" class="may white bold js-enlace">portfolio</a>
+				<a href="#about" class="may white bold js-enlace">about</a>
+				<a href="#contact" class="may white bold js-enlace">contact</a>
 			</nav>
 		</section>
 	</header>
@@ -28,21 +28,77 @@
 			<p class="white xsmall">Web Developer - Graphic Artist - User Experience Designer</p>
 		</div>
 	</section>
-	<section id="portfolio">
+	<section class="porcion">
 		<div class="title">
-			<h1 class="may gray">portfolio</h1>
+			<h2 class="may gray titleh1">portfolio</h2>
 			<div class="cajaStar"><div class="black">-</div><span class="fa fa-star small gray"></span><div class="black">-</div></div>
 		</div>
 		<div class="fotos">
-			<img src="assets/images/portfolio/cabin.png" alt="una cabaña" width="30%" class="portfoto">
-			<img src="assets/images/portfolio/cake.png" alt="un pastel" width="30%" class="portfoto">
-			<img src="assets/images/portfolio/circus.png" alt="circo" width="30%" class="portfoto">
-			<img src="assets/images/portfolio/game.png" alt="un joystick" width="30%" class="portfoto">
-			<img src="assets/images/portfolio/safe.png" alt="seguridad" width="30%" class="portfoto">
-			<img src="assets/images/portfolio/submarine.png" alt="un submarino" width="30%" class="portfoto">			
+			<div class="portfoto"><div class="icono"><i class="fa fa-search-plus tlupa white"></i></div><img src="assets/images/portfolio/cabin.png" alt="una cabaña" width="100%" height="250px" class="js-img"></div>
+			<div class="portfoto"><div class="icono"><i class="fa fa-search-plus tlupa white"></i></div><img src="assets/images/portfolio/cake.png" alt="un pastel" width="100%" height="250px" class="js-img"></div>
+			<div class="portfoto"><div class="icono"><i class="fa fa-search-plus tlupa white"></i></div><img src="assets/images/portfolio/circus.png" alt="circo" width="100%" height="250px" class="js-img"></div>
+			<div class="portfoto"><div class="icono"><i class="fa fa-search-plus tlupa white"></i></div><img src="assets/images/portfolio/game.png" alt="un joystick" width="100%" height="250px" class="js-img"></div>
+			<div class="portfoto"><div class="icono"><i class="fa fa-search-plus tlupa white"></i></div><img src="assets/images/portfolio/safe.png" alt="seguridad" width="100%" height="250px" class="js-img"></div>
+			<div class="portfoto"><div class="icono"><i class="fa fa-search-plus tlupa white"></i></div><img src="assets/images/portfolio/submarine.png" alt="un submarino" width="100%" height="250px" class="js-img"></div>
+		</div>
+		<div id="myModal" class="modal">
+			  <span id="close">&times;</span>
+				<div class="title">
+					<h2 class="may gray titleh1">proyect title</h2>
+					<div class="cajaStar"><div class="black">-</div><span class="fa fa-star small gray"></span><div class="black">-</div></div>
+				</div>
+        <img class="modal-content" id="img01">
+        <!-- <div id="caption"></div> -->
+				<div class="parrafomod">
+					<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="#" class="verdec">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+					<span>Client: <a href="#" class="verdec">Start Bootstrap</a>  Date: <a href="#" class="verdec">April 2014</a>  Service: <a href="#" class="verdec">Web Development</a></span>
+					<button class="js-btclose" value="close">Close</button>
+				</div>
+    </div>
+	</section>
+	<section class="porcion aguamarina">
+		<div class="title2">
+			<h2 class="may white titleh1">about</h2>
+			<div class="cajaStar"><div class="rect">-</div><span class="fa fa-star small white"></span><div class="rect">-</div></div>
+			<div class="parrafos">
+				<p class="white">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+				<p class="white">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+			</div>
+			<div class="down"><a href="#" class="white"><span class="fa fa-download extra"></span>Download Theme</a></div>
 		</div>
 	</section>
-
+	<section class="porcion contactame">
+		<div class="title3">
+			<h2 class="may gray titleh1">contact me</h2>
+			<div class="cajaStar"><div class="black">-</div><span class="fa fa-star small gray"></span><div class="black">-</div></div>
+			<form action="#">
+				<input type="text" placeholder="Name" class="gray-c"><ul class="none"><li>Please enter your name.</li></ul>
+				<input type="text" placeholder="Email Address" class="gray-c"><ul class="none"><li>Please enter your email address.</li></ul>
+				<input type="text" placeholder="Phone Number" class="gray-c"><ul class="none"><li>Please enter your phone number.</li></ul>
+				<input type="text" placeholder="Message" class="gray-c"><ul class="none"><li>Please enter a message.</li></ul>
+				<div class="linea">
+					<input type="submit" value="send">
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer class="porcion">
+		<section class="pie">
+			<section class="foot">
+				<span class="white may medium bold">location</span>
+				<div><p class="white">3481 Melrose Place Beverly Hills, CA 90210</p></div>
+			</section>
+			<section class="foot n2">
+				<span class="white may medium bold">around the web</span>
+				<div class="redes"><i class="fa fa-facebook ico white"></i><i class="fa fa-google-plus ico white"></i><i class="fa fa-twitter ico white"></i><i class="fa fa-linkedin ico white"></i><i class="fa fa-dribbble ico white"></i></div>
+			</section>
+			<section class="foot n2">
+				<span class="white may medium bold">about freelancer</span>
+				<div class="final"><p class="white">Freelance is a free to use, open source Bootstrap theme created by <span class="aqua">Start Bootstrap</span>.</p></div>
+			</section>
+		</section>
+		<div class="copy"><span class="white">Copyright © Your Website 2016</span></div>
+	</footer>
 <script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>

@@ -13,10 +13,11 @@ header{
   background-color: #2C3E50;
   position:fixed;
   width:100%;
-  height: 100px;
+  /*height: 100px;*/
   min-height: 70px;
-  padding:25px 0;
+  padding:29px 0;
   z-index: 1;
+  transition: all .3s;
 }
 
 
@@ -25,7 +26,7 @@ section{
   width: 85%;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   margin: auto;
 }
 
@@ -33,39 +34,33 @@ h1{
   font-size: 2em;
   letter-spacing: 1px;
   /*line-height: 2.9em;*/
+  transition: all .3s;
 }
 
 nav.index{
   display:flex;
-  width: 25%;
+  width: 26%;
   min-height: 2em;
-  justify-content: space-between;
+  justify-content:center;
   align-items: flex-end;
   flex-wrap: wrap;
   letter-spacing: 1px;
 }
 
-/*ul{
-  justify-content: space-between;
-  display:inline-flex;
-  width: 25%;
-  min-height: 2em;
-}
-
-ul>li{
-  list-style: none;
-}*/
-
 a{
   text-decoration: none;
+  padding:0.8em;
 }
 
 .js-up{
   font-size: 1.5em;
+  transition: all .3s;
 }
 
 .js-hup{
   padding:10px 0;
+  /*height: 70px;*/
+  transition: all .3s;
 }
 
 a:hover{
@@ -74,11 +69,13 @@ a:hover{
 
 section.start{
   position:relative;
-  top:7rem;
+  top:4rem;
   height: 46.3em;
   background-color:#18BC9C;
   width:100%;
   margin:0;
+  padding-top: 3rem;
+  transition: all .3s;
 }
 
 .container{
@@ -116,7 +113,7 @@ div.rect{
   font-size: 1.5em;
 }
 
-#portfolio{
+.porcion{
   display: block;
   position: relative;
   top: 14em;
@@ -132,7 +129,7 @@ div.title{
 }
 
 
-div.title>h1{
+.titleh1{
   font-size: 3em;
 }
 
@@ -147,14 +144,309 @@ div.title>h1{
 
 .fotos{
   margin: 3em auto;
-  display:flex;
-  width:90%;
+  display:inline-flex;
+  width:100%;
   justify-content: center;
   align-content:center;
   flex-wrap: wrap;
-  /*height:650px;*/
+  height:600px;
 }
 
-.portfolio{
-  margin:2em;
+.portfoto{
+  position:relative;
+  margin:1em;
+  width:30%;
+  height: 250px;
+}
+
+div.icono{
+  background-color: rgba(24, 188, 156, 0.7);
+  width:100%;
+  height: 250px;
+  position:absolute;
+  top:0;
+  z-index:-1;
+  text-align: center;
+  padding:30% 0;
+  box-sizing: border-box;
+}
+
+div.portfoto:hover div.icono{
+  z-index:0;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:#fff; /* Fallback color */
+  }
+
+/* Contenido del modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border:12px solid white;
+}
+
+/* Caption */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* boton cerrar el modal */
+#close {
+    position: absolute;
+    top: -58px;
+    right: 30px;
+    color: #eaeaea;
+    font-size: 160px;
+    font-weight: 100;
+    transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.parrafomod{
+  width:50%;
+  margin:0 auto;
+  text-align: center;
+  height: 200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 100% imagen en la pantalla */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.aguamarina{
+  background-color:#18BC9C;
+  width:100%;
+  height: 500px;
+  top:19em;
+}
+
+div.title2{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+div.parrafos{
+  width:70%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  min-height:200px;
+}
+
+div.parrafos>p{
+  font-size: 1.3em;
+  margin:0 1em;
+}
+
+div.down>a{
+  padding:0.5em;
+  border:2px solid white;
+  border-radius: 5%;
+  font-size: 1.3rem;
+}
+
+div.down>a:hover{
+  background-color: #fff;
+  color:#18BC9C;
+}
+
+.extra{
+  font-size: 1.3rem;
+  margin:3px;
+}
+
+.title3{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.contactame{
+  top:19em;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  width:70%;
+  margin:20px auto;
+}
+
+input[type="text"]{
+  padding: 20px 0;
+  outline: none;
+  font-size: 1.5em;
+  border:0;
+  border-top: 1px solid #eaeaea;
+  color:#000;
+}
+
+div.linea{
+  border-top: 1px solid #eaeaea;
+  padding: 10px 0;
+  margin:100px 0 0 0;
+}
+
+input[type="submit"]{
+  padding:10px;
+  background-color: #18BC9C;
+  margin-top: 20px;
+  color:#fff;
+  width:10%;
+  border:0;
+  border-radius: 10%;
+  font-size: 1.5em;
+}
+
+.js-active{
+  background-color:#18BC9C;
+}
+
+.js-active:hover{
+  color:#fff;
+}
+
+footer{
+  top:19em;
+  background-color: #2C3E50;
+}
+
+.pie{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width:100%;
+}
+
+.foot{
+  display:flex;
+  width:25%;
+  justify-content:space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.n2{
+  display:flex;
+  width:33.3333%;
+  justify-content:space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.foot>div{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 80%;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.foot>div>p{
+  font-size: 1em;
+  margin:auto 10px;
+}
+
+.redes{
+  flex-wrap: nowrap;
+}
+
+.ico{
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  border:1px solid #fff;
+  border-radius: 50%;
+  padding:10px;
+  margin:10px;
+}
+
+.ico:hover{
+  color:#18BC9C;
+  background-color: #fff;
+  cursor:pointer;
+}
+
+.aqua{
+  color:#18BC9C;
+  font-size: 1em;
+}
+
+.foot>.final>p{
+  width: 100%;
+  flex-wrap: nowrap;
+  margin:0;
+}
+
+div.copy{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #233140;
+  margin:20px auto 0;
 }
