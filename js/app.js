@@ -1,3 +1,4 @@
+//funcionalidad del scroll
 var h1=document.getElementsByTagName('h1')[0];
 var header=document.getElementsByTagName('header')[0];
 var enlace=document.getElementsByClassName('js-enlace');
@@ -43,21 +44,17 @@ window.addEventListener('scroll',moveScroll);
 
 enlace[0].addEventListener("click", function(){
     window.scrollTo(0,768);
-    // enlace[0].classList.add("js-active");
 })
 
 enlace[1].addEventListener("click", function(){
     window.scrollTo(0,1648);
-    // enlace[1].classList.add("js-active");
 })
 
 enlace[2].addEventListener("click", function(){
     window.scrollTo(0,2151);
-    // enlace[2].classList.add("js-active");
 })
 
 var images=document.getElementsByClassName('fotos')[0];
-// var images=document.getElementsByClassName('js-img')[0];
 var span = document.getElementById("close");
 var modal = document.getElementById('myModal');
 var body=document.getElementsByTagName('body')[0];
@@ -69,16 +66,14 @@ images.addEventListener('click',function (e){
   console.log(e.target);
   console.log(e.target.nextElementSibling);
   console.log(e.currentarget);
-  // colocar condicional para solo seleccionar la img
+  // colocar condicional para solo seleccionar la clase icono
   if(e.target.className == "icono"){
     // console.log(images);
     var modalImg = document.getElementById("img01");
     body.style.overflow="hidden";
-    // var captionText = document.getElementById("caption");
     modal.style.display="block";
     modalImg.src = e.target.nextElementSibling.src;
-    // captionText.innerHTML = e.target.nextElementSibling.alt;
-  }
+    }
 });
 
 function cerrar (event){
@@ -90,6 +85,8 @@ function cerrar (event){
 
 span.addEventListener('click',cerrar);
 btclose.addEventListener('click',cerrar);
+
+//comienzan las validaciones, se ha bloqueado el teclado para números o texto dependiendo del contexto
 
 var input=document.getElementsByTagName('input');
 var textarea=document.getElementsByTagName('textarea')[0];
