@@ -14,15 +14,36 @@ Para ello use flexbox para la maquetación.Se piden las siguientes funcionalidad
 
 ![function scroll](assets/images/scroll.png)
 
+Es un ejemplo de como cambia el color del "boton":
+
+
+![function scroll](assets/images/port.png)
+
 ### Funcionalidad del modal.
  Esta función llama al modal que se encuentra oculto y utiliza el target para detectar quien es el objetivo de esta llamada, en este caso sera su "nextElementSibling" (hermano en el DOM).
 
-![function del modal](assets/images/funcionalidad.png)
+![function del modal](assets/images/modal.png)
 
 ### Function de validación.
-Esta función se encarga de validar el correcto llenado del formulario, de estar completo se vaciaran los casilleros. Se usan los eventos keypress, blur y click. Se muestra sólo una parte de la función a continuación
+Esta función se encarga de validar el correcto llenado del formulario, de estar completo se vaciaran los casilleros. Se usan los eventos keypress, blur y click. Se muestra por partes cada una las funciones a continuación:
 
 ![function validar](assets/images/validar.png)
+
+Como se ve en el navegador:
+
+![function validar en el navegador](assets/images/validado.png)
+
+
+![function letras](assets/images/letras.png)
+
+
+![function correo](assets/images/correo.png)
+
+
+![function numeros](assets/images/numeros.png)
+
+
+![function validar todo al click](assets/images/validatodo.png)
 
 
 
