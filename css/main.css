@@ -28,11 +28,13 @@ section{
   margin: auto;
 }
 
+
 h1{
   font-size: 2em;
   letter-spacing: 1px;
   transition: all .3s;
 }
+
 
 nav.index{
   display:flex;
@@ -44,24 +46,29 @@ nav.index{
   letter-spacing: 1px;
 }
 
+
 a{
   text-decoration: none;
   padding:0.8em;
 }
+
 
 .js-up{
   font-size: 1.5em;
   transition: all .3s;
 }
 
+
 .js-hup{
   padding:10px 0;
   transition: all .3s;
 }
 
+
 a:hover{
   color:#18BC9C;
 }
+
 
 section.start{
   position:relative;
@@ -74,6 +81,7 @@ section.start{
   transition: all .3s;
 }
 
+
 .container{
   display:flex;
   flex-direction: column;
@@ -84,9 +92,6 @@ section.start{
   width:100%;
 }
 
-.grande{
-  font-size: 4.75em;
-}
 
 div.rect{
   background-color: #fff;
@@ -95,18 +100,6 @@ div.rect{
   margin:0.5em;
   width:40%;
   color:#18BC9C;
-}
-
-.cajaStar{
-  width:20%;
-}
-
-.small{
-  font-size: 2em;
-}
-
-.xsmall{
-  font-size: 1.5em;
 }
 
 
@@ -129,6 +122,7 @@ div.title{
   width:38%;
 }
 
+
 .fotos{
   margin: 3em auto;
   display:inline-flex;
@@ -139,12 +133,6 @@ div.title{
   height:600px;
 }
 
-.portfoto{
-  position:relative;
-  margin:1em;
-  width:30%;
-  height: 250px;
-}
 
 div.icono{
   background-color: rgba(24, 188, 156, 0.7);
@@ -157,6 +145,7 @@ div.icono{
   padding:30% 0;
   box-sizing: border-box;
 }
+
 
 div.portfoto:hover div.icono{
   z-index:0;
@@ -186,22 +175,8 @@ div.portfoto:hover div.icono{
     border:12px solid white;
 }
 
-/* Caption */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: black;
-    padding: 10px 0;
-    height: 60px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 /* Add Animation */
-.modal-content, #caption {
+.modal-content {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -229,6 +204,7 @@ div.portfoto:hover div.icono{
     transition: 0.3s;
 }
 
+
 #close:hover,
 #close:focus {
     color: #bbb;
@@ -236,11 +212,13 @@ div.portfoto:hover div.icono{
     cursor: pointer;
 }
 
+
 .cerrar{
   cursor:pointer;
   padding:10px;
   border-radius: 14%;
 }
+
 
 .parrafomod{
   width:50%;
@@ -253,6 +231,7 @@ div.portfoto:hover div.icono{
   align-items: center;
 }
 
+
 .parrafomod>p{
   font-size: 1.2em;
   line-height: 22px;
@@ -262,12 +241,14 @@ div.portfoto:hover div.icono{
 .fa-times{
   margin-right: 5px;
 }
+
 /* 100% imagen en la pantalla */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
     }
 }
+
 
 .aguamarina{
   background-color:#18BC9C;
@@ -276,6 +257,7 @@ div.portfoto:hover div.icono{
   top:19em;
 }
 
+
 div.title2{
   display:flex;
   flex-direction: column;
@@ -283,6 +265,7 @@ div.title2{
   align-items: center;
   height: 500px;
 }
+
 
 div.parrafos{
   width:70%;
@@ -293,10 +276,12 @@ div.parrafos{
   min-height:200px;
 }
 
+
 div.parrafos>p{
   font-size: 1.3em;
   margin:0 1em;
 }
+
 
 div.down>a{
   padding:0.5em;
@@ -305,15 +290,18 @@ div.down>a{
   font-size: 1.3rem;
 }
 
+
 div.down>a:hover{
   background-color: #fff;
   color:#18BC9C;
 }
 
+
 .extra{
   font-size: 1.3rem;
   margin:3px;
 }
+
 
 .title3{
   display:flex;
@@ -323,9 +311,11 @@ div.down>a:hover{
   height: 800px;
 }
 
+
 .contactame{
-  top:25em;
+  top:27em;
 }
+
 
 form{
   display:flex;
@@ -335,15 +325,6 @@ form{
   min-height: 500px;
 }
 
-.text{
-  padding: 20px 0;
-  outline: none;
-  font-size: 1.5em;
-  border:0;
-  border-top: 1px solid #eaeaea;
-  color:#000;
-}
-
 
 div.linea{
   border-top: 1px solid #eaeaea;
@@ -351,10 +332,11 @@ div.linea{
   margin:30px 0 0 0;
 }
 
+
 input[type="submit"]{
   padding:10px;
   background-color: #18BC9C;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color:#fff;
   width:10%;
   border:0;
@@ -362,26 +344,31 @@ input[type="submit"]{
   font-size: 1.5em;
 }
 
+
 .js-active{
   background-color:#18BC9C;
 }
+
 
 .js-active:hover{
   color:#fff;
 }
 
-footer{
-  top:25em;
+
+.pfoot{
+  top:30em;
   background-color: #2C3E50;
 }
+
 
 .pie{
   display:inline-flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 250px;
   width:100%;
 }
+
 
 .foot{
   display:flex;
@@ -389,16 +376,19 @@ footer{
   width:25%;
   justify-content:space-around;
   align-items: center;
-  height: 200px;
+  height: 160px;
+  margin:0;
 }
+
 
 .n2{
   display:flex;
   width:33.3333%;
   justify-content:space-around;
   align-items: center;
-  height: 200px;
+  height: 160px;
 }
+
 
 .foot>div{
   display:flex;
@@ -410,10 +400,12 @@ footer{
   text-align: center;
 }
 
+
 .foot>div>p{
   font-size: 1em;
   margin:auto 10px;
 }
+
 
 .redes{
   flex-wrap: nowrap;
@@ -426,10 +418,12 @@ footer{
   cursor:pointer;
 }
 
+
 .aqua{
   color:#18BC9C;
   font-size: 1em;
 }
+
 
 .foot>.final>p{
   width: 100%;
@@ -437,11 +431,13 @@ footer{
   margin:0;
 }
 
+
 div.padrecopy{
   width:100%;
   background-color: #233140;
   text-align: center;
 }
+
 
 div.copy{
   width:93%;
