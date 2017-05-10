@@ -1,25 +1,29 @@
 # Freelancer
 
-Para trabajar en este proyecto, primero deberás clonarlo:
+El trabajo consistio en replicar el [website](https://blackrockdigital.github.io/startbootstrap-freelancer/).
+Para ello use flexbox para la maquetación.Se piden las siguientes funcionalidades:
+- Al hacer scroll, este evento hará que el padding de esta section disminuya y el tamaño de fuente del h1; al regresar al punto cero; se vuelve a vissualizar como al inicio.
+- Hay un modal de fotos, al hacer click ocupará toda la pantalla y tendra su propio scroll.
+- Tenemos un formulario que debe estar validado; en este ejercicio al no estar debidamente completado aparece un texto debajo de cada input, indicando el error. En este proyecto se ha bloqueado el teclado númerico para el input nombre y el teclado de texto para el teléfono.
 
-```sh
-git clone https://gitlab.com/laboratoria/freelancer.git
-```
+## Funcionalidades en JS
+------------------------
 
-Luego, para poder trabajar en él y enlazarlo con nuestro repositorio, deberemos ingresar a la carpeta descargada y borrar el .git que nos trae por defecto (tener cuidado con el segundo comando, asegurarse de que esté bien escrito):
+### Function scroll.
+ Esta función se encarga de hacer cambios de acuerdo al evento scroll, así si colocamos la section about, en el navegador este "boton" cambiará de background-color y color de texto. A continuación la función:
 
-```sh
-cd freelancer
-rm -rf .git
-```
+![function scroll](assets/images/scroll.png)
 
-Por último, una vez creado tu repositorio en Github, simplemente inicializar Git y agregar tu remoto:
+### Funcionalidad del modal.
+ Esta función llama al modal que se encuentra oculto y utiliza el target para detectar quien es el objetivo de esta llamada, en este caso sera su "nextElementSibling" (hermano en el DOM).
 
-```sh
-git init
-git remote add origin htttps://github.com/<usuario>/<nombre-repositorio>.git
-```
+![function del modal](assets/images/funcionalidad.png)
 
-Con estos pasos ya puedes seguir tu workflow de siempre haciendo commits y pusheando a tu repositorio remoto :)
+### Function de validación.
+Esta función se encarga de validar el correcto llenado del formulario, de estar completo se vaciaran los casilleros. Se usan los eventos keypress, blur y click. Se muestra sólo una parte de la función a continuación
 
-`Recuerda`: Este proyecto consiste en replicar este [website](https://blackrockdigital.github.io/startbootstrap-freelancer/).
+![function validar](assets/images/validar.png)
+
+
+
+## Autor: Stephanie Hiyagon.
