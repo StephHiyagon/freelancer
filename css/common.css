@@ -33,3 +33,13 @@
 .verdec{
   color:#18BC9C;
 }
+
+.titleh1{
+  font-size: 3em;
+}
+
+.porcion{
+  display: block;
+  position: relative;
+  top: 22em;
+}

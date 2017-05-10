@@ -92,6 +92,7 @@ span.addEventListener('click',cerrar);
 btclose.addEventListener('click',cerrar);
 
 var input=document.getElementsByTagName('input');
+var textarea=document.getElementsByTagName('textarea')[0];
 
 function numero(e){
   var key=e.keyCode;
@@ -132,7 +133,7 @@ function letras(e){
 }
 
 function correo(event){
-  var correo=input[2].value;
+  var correo=input[1].value;
   console.log(correo);
   if(!(/[\w]+@{1}[\w]+\.[a-z]{2,3}/.test(correo)) || correo==""){
     this.nextElementSibling.style.display="block";
@@ -154,21 +155,28 @@ function valida(event){
 }
 
 function clear(){
-  for(var i=0;i<4;i++){
+  for(var i=0;i<3;i++){
     input[i].value="";
   }
+  textarea.value="";
 }
 
 function validaT(event){
   event.preventDefault();
-  for(var i=0; i<4;i++){
+  for(var i=0; i<3;i++){
   if( input[i].value==""){
     input[i].nextElementSibling.style.display="block";
   }else{
     input[i].nextElementSibling.style.display="none";
   }
+}
+  if (textarea.value=="") {
+    textarea.nextElementSibling.style.display="block";
+  }else{
+    textarea.nextElementSibling.style.display="none";
   }
-  if(input[0].value!="" && input[1].value!="" && input[2].value!="" && input[3]!=""){
+
+  if(input[0].value!="" && input[1].value!="" && input[2].value!="" && textarea.value!=""){
     clear();
   }
 }
@@ -178,5 +186,5 @@ input[2].onkeypress=numero;
 input[0].onblur=valida;
 input[1].onblur=correo;
 input[2].onblur=valida;
-input[3].onblur=valida;
-input[4].onclick=validaT;
+textarea.onblur=valida;
+input[3].onclick=validaT;
